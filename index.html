@@ -1,14 +1,34 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="hamburger.css">
+    <script src="scripts.js" defer></script>
     <title>DigiCan</title>
 </head>
 <body>
-    <section>
+    <main>
+        <section class="flexContainerHamburger">
+            <input type="checkbox" onclick="onClickCheckBox()" id="checkBoxId"/>
+            <div id="spanId">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>            
+        </section>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="" id="homeBtn">Home</a></li>
+                <li><a href="" id="portfolioBtn">Portfolio</a></li>
+                <li><a href="" id="contactBtn">Contact me</a></li>
+                <li><a href="" id="infoBtn">Home info</a></li>
+            </ul>
+        </nav>
+        
         <header>
             <h1>Digi<span class="can">Can</span><span class="tradeMark">&trade;</span></h1> 
         </header>
@@ -19,9 +39,14 @@
         <div class="contact">
             <h4>Contact me</h4>
             <h3><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;076 754 28 62</h3>
-            <h3><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;pathummw@yahoo.com</h3>
+            <h3><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;<a href="mailto:pathummw@yahoo.com">pathummw@yahoo.com</a></h3>
         </div>
+
+
+        <section id="home">
+            <h3>This is home</h3>
+        </section>
         
-    </section>
+    </main>
 </body>
 </html>
